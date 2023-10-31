@@ -1,0 +1,295 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+@font-face {
+    font-family: 'MonumentExtended';
+    src: url('./monumentextended-regular-webfont.woff2') format('woff2'),
+        url('./monumentextended-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'DM Sans', sans-serif;
+    color: white;
+}
+
+::selection {
+    background-color: #b99e64;
+    color: #ffffff;
+    text-shadow: none;
+}
+
+-webkit-::selection {
+    background-color: #b99e64;
+    color: #ffffff;
+    text-shadow: none;
+}
+
+::-moz-selection {
+    background-color: #b99e64;
+    color: #ffffff;
+    text-shadow: none;
+}
+
+::-webkit-scrollbar {
+    width: 5px;
+    height: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+    cursor: pointer;
+    background: #b99e64;
+}
+
+.container {
+    max-width: 85%;
+    margin: 0 auto;
+}
+
+.main-head {
+    color: #FFA969;
+    font-size: 25px;
+}
+
+.navbar li a {
+    color: #FFA969;
+}
+
+.navbar li a:hover {
+    color: rgba(255, 255, 255, 0.9);
+    text-decoration: none;
+}
+
+.navbar-brand {
+    color: #FFA969;
+}
+
+.navbar-brand:hover {
+    color: rgba(255, 255, 255, 0.9);
+}
+
+.navbar-nav {
+    margin-left: 20px;
+}
+
+.section {
+    background: #000;
+    padding: 100px 0;
+}
+
+.sec1 {
+    background: url(./images/cat-bg.png) no-repeat;
+    background-repeat: no-repeat;
+    background-position: top right;
+    background-size: 100% 100%;
+    /* position: relative;
+    padding: 100px 0; */
+}
+
+.black {
+    position: absolute;
+    right: 0;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.2)
+}
+
+.sec2 {
+    background: #292039;
+}
+
+.sec3 {
+    background: #292039;
+}
+
+.about-heading {
+    font-size: 100px;
+    color: #f2b89a;
+}
+
+.about-title {
+    font-size: 25px;
+    font-weight: 800;
+}
+
+.about-head {
+    color: #f2b89a;
+    font-size: 20px;
+}
+
+.about-desc {
+    font-size: 15px;
+}
+
+/* Roadmap */
+
+.roadmap-item {
+    margin: 50px 0;
+}
+
+.roadmap-title {
+    font-size: 30px;
+    font-family: 'MonumentExtended', sans-serif;
+}
+
+.roadmap-head {
+    font-size: 17px;
+    font-weight: 800;
+    line-height: 30px;
+}
+
+.roadmap-desc {
+    font-size: 20px;
+    margin: -10px 0 0 0;
+    font-weight: 800;
+}
+
+.desc1 {
+    color: #249fb4;
+}
+
+.desc2 {
+    color: rgb(209, 44, 93);
+}
+
+.desc3 {
+    color: rgb(42, 182, 77);
+}
+
+.roadmap-point {
+    font-size: 15px;
+    color: #FFA969;
+}
+
+.font {
+    font-family: 'MonumentExtended', sans-serif;
+}
+
+.phase {
+    font-family: 'MonumentExtended', sans-serif;
+    font-size: 15px;
+}
+
+.btn-top {
+    padding: 0.5rem 0;
+    border-radius: 40px;
+    font-weight: 500;
+    font-size: 18px;
+    width: 150px;
+    text-align: center;
+    color: #fff;
+    background: #C14F14;
+}
+
+.menu-a {
+    font-size: 20px;
+    color: #fff;
+    text-decoration: none;
+}
+
+.menu-a:hover {
+    color: rgba(255, 255, 255, 0.7);
+    text-decoration: none;
+}
+
+.main-div {
+    width: 80%;
+}
+
+.ellipse-1 {
+    height: 80%;
+    width: auto;
+    position: absolute;
+    left: -200px;
+    bottom: -200px;
+}
+
+.ellipse-2 {
+    height: 40%;
+    width: auto;
+    position: absolute;
+    top: 50px;
+    right: -0px;
+}
+
+.ellipse-3{
+    display: none;
+    height: 40%;
+    width: auto;
+    position: absolute;
+    left: 0px;
+    bottom: -700px;
+}
+
+@media only screen and (max-width: 667px) {
+    .sec1 {
+        background-size: cover;
+        background-position: left;
+    }
+
+    .navbar-nav {
+        margin-left: 0;
+    }
+
+    .roadmap-desc {
+        margin: -10px 0 20px 0;
+    }
+
+    .about-title {
+        margin-top: 100px !important;
+    }
+
+    .menu-a {
+        font-size: 15px;
+    }
+
+    .main-div {
+        width: 100%;
+    }
+
+    .black {
+        background: rgba(0, 0, 0, 0);
+    }
+
+    .main-head {
+        font-size: 23px;
+        margin-bottom: 20px;
+    }
+
+    .ellipse-1 {
+        display: none;
+    }
+
+    .ellipse-3{
+        display: block;
+    }
+    
+    .ellipse-2 {
+        height: 30%;
+        width: auto;
+        position: absolute;
+        top: 50px;
+        right: -0px;
+    }
+
+
+    .nav-item{
+        padding: 20px 0;
+    }
+
+    .item-hide{
+        display: none;
+    }
+
+    .navbar-collapse{
+        background: #292039;
+    }
+}
