@@ -85,9 +85,9 @@ body {
 }
 
 .sec1 {
-    background: url(./images/cat-bg.png) no-repeat;
+    background: url(./images/cat-2.jpeg) no-repeat;
     background-repeat: no-repeat;
-    background-position: top right;
+    background-position: right;
     background-size: 100% 100%;
     /* position: relative;
     padding: 100px 0; */
@@ -231,8 +231,8 @@ body {
 
 @media only screen and (max-width: 667px) {
     .sec1 {
-        background-size: cover;
-        background-position: left;
+        background-size: 130% 100%;
+        background-position: center;
     }
 
     .navbar-nav {
